@@ -1,0 +1,22 @@
+#site-title a, 
+#site-title a:hover { color: #ECEBE5; }
+
+.post-title a, a { color: #781015; }
+a:hover { color: #781015; }
+
+nav[role="navigation"] ul li.current a { color: #781015; }
+nav[role="navigation"] ul li a:hover, #social-menu a:hover { color: #781015; }
+
+::selection { background: #781015; }
+
+#page-title-bg { background: #6A6556; }
+.page-title { color: #25231C; }
+.page-title-inner .cross { background: #5E594B; }
+#sidebar, #sidebg { background: #781015; }
+
+.widget-title { color: #CBC7AF; }
+.widget li a { color: white; }
+.widget li a:hover { color: white; }
+
+#comments #submit, .reply a { background: #781015; color: white; }
+.comment-list .reply a:hover { background: #EBEEF0; color: #781015; }

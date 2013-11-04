@@ -1,0 +1,22 @@
+#site-title a, 
+#site-title a:hover { color: white; }
+
+.post-title a, a { color: #7E9399; }
+a:hover { color: #7E9399; }
+
+nav[role="navigation"] ul li.current a { color: #7E9399; }
+nav[role="navigation"] ul li a:hover, #social-menu a:hover { color: #7E9399; }
+
+::selection { background: #98B1B7; }
+
+#page-title-bg { background: #98B1B7; }
+.page-title { color: white; }
+.page-title-inner .cross { background: #8DA5AA; }
+#sidebar, #sidebg { background: #948D75; }
+
+.widget-title { color: #D9CEB1; }
+.widget li a { color: #D5DED9; }
+.widget li a:hover { color: white; }
+
+#comments #submit, .reply a { background: #948D75; color: white; }
+.comment-list .reply a:hover { background: #EBEEF0; color: #7E9399; }
