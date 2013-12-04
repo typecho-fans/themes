@@ -1,5 +1,5 @@
         <footer role="contentinfo" id="footer">
-            <p class="copyright">&copy; <a href="<?php $this->options->siteurl(); ?>"><?php $this->options->title(); ?></a><span class="sep">|</span>Theme by <a href="http://lcz.me" target="_blank">Shingchi</a><span class="sep">|</span>由 <a href="http://www.typecho.org" target="_blank">Typecho</a> 强力驱动</p>
+            <p class="copyright">&copy; <a href="<?php $this->options->siteurl(); ?>"><?php $this->options->title(); ?></a><span class="sep">|</span>Theme by <a href="http://lcz.me" target="_blank">ShingChi</a><span class="sep">|</span>由 <a href="http://www.typecho.org" target="_blank">Typecho</a> 强力驱动</p>
         </footer><!--=E #footer -->
     </div><!--=E #page -->
 <?php $this->need('sidebar.php'); ?>
