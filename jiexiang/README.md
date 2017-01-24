@@ -1,3 +1,5 @@
-## 使用帮助 ##
+### Typecho主题JieXiang(结香) v1.0.1
 
-侧栏项目需要添加的，请自行根据默认模板 `sidebar.php` 里的内容添加
+![screenshot](/screenshot.png)
+
+简洁的色块风格双栏主题，可选6种配色方案。

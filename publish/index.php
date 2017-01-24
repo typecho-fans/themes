@@ -4,7 +4,7 @@
  *
  * @package Publish 
  * @author Austin
- * @version 1.1
+ * @version 1.3
  * @link http://imnerd.org
  */
  
