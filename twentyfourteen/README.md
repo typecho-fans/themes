@@ -1,6 +1,6 @@
 ### Typecho主题Twenty Fourteen v1.1
 
-![screenshot](/screenshot.png)
+![screenshot](screenshot.png)
 
 移植自Wordpress默认主题2014版，可设置顶部图像与文本颜色。
 

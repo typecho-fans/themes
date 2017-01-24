@@ -1,6 +1,6 @@
 ### Typecho主题Twenty Twelve v1.2
 
-![screenshot](/screenshot.png)
+![screenshot](screenshot.png)
 
 移植自Wordpress默认主题2012版，纯白双栏极简风格。
 

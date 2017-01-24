@@ -26,11 +26,11 @@
 
 ###### :warning:：暂不可用，待更新；:dart:：需要插件配合，详见说明。
 
-名称 | 预览 | 简介 | 作者
----- | :----: | :----: | ----:
-[JieXiang](/jiexiang) | ![](/jiexiang/screenshot.png) | 结香主题 | [@ShingChi](https://github.com/shingchi)
-[Publish](/publish) | ![](/publish/screenshot.png) | (WordPress移植)响应式主题 | [@lizheming](https://github.com/lizheming)
-[Pure](/pure) | ![](/pure/screenshot.png) | 纯净之美主题 | [@ShingChi](https://github.com/shingchi)
-[Silence](/silence) | ![](/silence/screenshot.png) | 寂静之声主题 | [@ShingChi](https://github.com/shingchi)
-[Twenty Fourteen](/twentyfourteen) | ![](/twentyfourteen/screenshot.png) | (WordPress移植)2014默认主题 | [@lizheming](https://github.com/lizheming)
-[Twenty Twelve](/twentytwelve) | ![](/twentytwelve/screenshot.png) | (WordPress移植)2012默认主题 | [@lizheming](https://github.com/lizheming)
+名称 | 简介 | 作者
+---- | :----: | ----:
+[JieXiang](/jiexiang) | 结香主题 | [@ShingChi](https://github.com/shingchi)
+[Publish](/publish) | (WordPress移植)响应式主题 | [@lizheming](https://github.com/lizheming)
+[Pure](/pure) | 纯净之美主题 | [@ShingChi](https://github.com/shingchi)
+[Silence](/silence) | 寂静之声主题 | [@ShingChi](https://github.com/shingchi)
+[Twenty Fourteen](/twentyfourteen) | (WordPress移植)2014默认主题 | [@lizheming](https://github.com/lizheming)
+[Twenty Twelve](/twentytwelve) | (WordPress移植)2012默认主题 | [@lizheming](https://github.com/lizheming)
