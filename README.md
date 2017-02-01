@@ -28,6 +28,7 @@
 
 名称 | 简介 | 作者
 ---- | :----: | ----:
+[handsome](/handsome) | 是一个自响应，超酷的typecho主题 | [@ihewro](https://github.com/ihewro)
 [JieXiang](/jiexiang) | 结香主题 | [@ShingChi](https://github.com/shingchi)
 [Publish](/publish) | (WordPress移植)响应式主题 | [@lizheming](https://github.com/lizheming)
 [Pure](/pure) | 纯净之美主题 | [@ShingChi](https://github.com/shingchi)
