@@ -7,7 +7,7 @@
 - **使用帮助**：在右上角的绿色按钮处选择使用git工具克隆项目地址或打包下载zip即可。
 
 ### 作者须知
-
+ 
 1. 建议使用[**subtree**](http://aoxuis.me/post/2013-08-06-git-subtree)方法推送你的主题repo，或者直接在本项目中创建；
 
  >submodule可链接至原项目但也会给下载和协作更新带来一定麻烦
@@ -33,5 +33,6 @@
 [Publish](/publish) | (WordPress移植)响应式主题 | [@公子](https://github.com/lizheming)
 [Pure](/pure) | 纯净之美主题 | [@ShingChi](https://github.com/shingchi)
 [Silence](/silence) | 寂静之声主题 | [@ShingChi](https://github.com/shingchi)
+[Slanted :dart:](/Slanted) | (WordPress移植)响应式多配色个性主题 | [@DT27](https://github.com/DT27)
 [Twenty Fourteen](/twentyfourteen) | (WordPress移植)2014默认主题 | [@公子](https://github.com/lizheming)
 [Twenty Twelve](/twentytwelve) | (WordPress移植)2012默认主题 | [@公子](https://github.com/lizheming)
