@@ -28,11 +28,11 @@
 
 名称 | 简介 | 作者
 ---- | :----: | ----:
-[handsome](/handsome) | 是一个自响应，超酷的typecho主题 | [@ihewro](https://github.com/ihewro)
-[JieXiang](/jiexiang) | 结香主题 | [@ShingChi](https://github.com/shingchi)
-[Publish](/publish) | (WordPress移植)响应式主题 | [@公子](https://github.com/lizheming)
-[Pure](/pure) | 纯净之美主题 | [@ShingChi](https://github.com/shingchi)
-[Silence](/silence) | 寂静之声主题 | [@ShingChi](https://github.com/shingchi)
-[Slanted :dart:](/Slanted) | (WordPress移植)响应式多配色个性主题 | [@DT27](https://github.com/DT27)
-[Twenty Fourteen](/twentyfourteen) | (WordPress移植)2014默认主题 | [@公子](https://github.com/lizheming)
-[Twenty Twelve](/twentytwelve) | (WordPress移植)2012默认主题 | [@公子](https://github.com/lizheming)
+[handsome](/handsome) :dart: | 响应式极酷多配色框架主题 | [@ihewro](https://github.com/ihewro)
+[JieXiang](/jiexiang) | “结香”多配色简洁主题 | [@ShingChi](https://github.com/shingchi)
+[Publish](/publish) | (WordPress移植)响应式清新双栏主题 | [@公子](https://github.com/lizheming)
+[Pure](/pure) | “纯净之美”灰白素雅主题 | [@ShingChi](https://github.com/shingchi)
+[Silence](/silence) | “寂静之声”多配色古典主题 | [@ShingChi](https://github.com/shingchi)
+[Slanted](/Slanted) :dart: | (WordPress移植)响应式多配色个性主题 | [@DT27](https://github.com/DT27)
+[Twenty Fourteen](/twentyfourteen) | (WordPress移植)2014默认双栏主题 | [@公子](https://github.com/lizheming)
+[Twenty Twelve](/twentytwelve) | (WordPress移植)2012默认极简主题 | [@公子](https://github.com/lizheming)
