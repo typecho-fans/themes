@@ -30,6 +30,7 @@
 ---- | :----: | ----:
 [handsome](/handsome) :dart: | 响应式极酷多配色框架主题 | [@ihewro](https://github.com/ihewro)
 [JieXiang](/jiexiang) | “结香”多配色简洁主题 | [@ShingChi](https://github.com/shingchi)
+[GreenGrapes](/GreenGrapes) |  一款有科技感颗粒，自定义头像的， 好看的标签云的响应式模板。 | [@hongweipeng](https://github.com/hongweipeng)
 [Publish](/publish) | (WordPress移植)响应式清新双栏主题 | [@公子](https://github.com/lizheming)
 [Pure](/pure) | “纯净之美”灰白素雅主题 | [@ShingChi](https://github.com/shingchi)
 [Silence](/silence) | “寂静之声”多配色古典主题 | [@ShingChi](https://github.com/shingchi)
