@@ -2,7 +2,7 @@
 
 ![logo](https://raw.githubusercontent.com/typecho-fans/typecho-fans.github.io/master/soapgroup.png)
 
-本项目中主题原则上均支持0.9+版本，欢迎提交问题建议至[issues](https://github.com/typecho-fans/plugins/issues)，欢迎更多作者加入！:penguin:交流群号：[**40412938**](http://shang.qq.com/wpa/qunwpa?idkey=a5a8afedf099e18ddf9b530db9217251e39001d52aace42888bf470d9b6cb86a)
+本项目中主题原则上均支持0.9+版本，欢迎提交问题建议至[issues](https://github.com/typecho-fans/themes/issues)，欢迎更多作者加入！:penguin:交流群号：[**40412938**](http://shang.qq.com/wpa/qunwpa?idkey=a5a8afedf099e18ddf9b530db9217251e39001d52aace42888bf470d9b6cb86a)
 
 - **使用帮助**：在右上角的绿色按钮处选择使用git工具克隆项目地址或打包下载zip即可。
 
@@ -30,7 +30,7 @@
 ---- | :----: | ----:
 [handsome](/handsome) :dart: | 响应式极酷多配色框架主题 | [@ihewro](https://github.com/ihewro)
 [JieXiang](/jiexiang) | “结香”多配色简洁主题 | [@ShingChi](https://github.com/shingchi)
-[GreenGrapes](/GreenGrapes) |  一款有科技感颗粒，自定义头像的， 好看的标签云的响应式模板。 | [@hongweipeng](https://github.com/hongweipeng)
+[GreenGrapes](/GreenGrapes) | 响应式绿色科技感双栏主题 | [@hongweipeng](https://github.com/hongweipeng)
 [Publish](/publish) | (WordPress移植)响应式清新双栏主题 | [@公子](https://github.com/lizheming)
 [Pure](/pure) | “纯净之美”灰白素雅主题 | [@ShingChi](https://github.com/shingchi)
 [Silence](/silence) | “寂静之声”多配色古典主题 | [@ShingChi](https://github.com/shingchi)
