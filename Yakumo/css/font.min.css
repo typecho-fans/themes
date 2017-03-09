@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('/usr/themes/Yakumo/fonts/iconfont.eot'); 
+  src: url('/usr/themes/Yakumo/fonts/iconfont.eot?#iefix') format('embedded-opentype'), 
+  url('/usr/themes/Yakumo/fonts/iconfont.woff') format('woff'), 
+  url('/usr/themes/Yakumo/fonts/iconfont.ttf') format('truetype'), 
+  url('/usr/themes/Yakumo/fonts/iconfont.svg#iconfont') format('svg');
+}
+                          
+@font-face {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Exo Thin'), local('Exo-Thin'), url(/usr/themes/Yakumo/fonts/Thin.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Exo Regular'), local('Exo-Regular'), url(/usr/themes/Yakumo/fonts/Regular.woff) format('woff');
+}

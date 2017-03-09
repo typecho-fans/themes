@@ -28,6 +28,7 @@
 
 名称 | 简介 | 作者
 ---- | :----: | ----:
+[Yakumo](/Yakumo) | 响应式单栏大Banner主题 | [@ryanwschina](https://github.com/ryanwschina)
 [handsome](/handsome) :dart: | 响应式极酷多配色框架主题 | [@ihewro](https://github.com/ihewro)
 [JieXiang](/jiexiang) | “结香”多配色简洁主题 | [@ShingChi](https://github.com/shingchi)
 [GreenGrapes](/GreenGrapes) | 响应式绿色科技感双栏主题 | [@hongweipeng](https://github.com/hongweipeng)
