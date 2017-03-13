@@ -11,17 +11,17 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php if($this->is('post')): ?><?php echo $this->categories[0]['name']; ?> - <?php endif; ?><?php $this->options->title(); ?></title>
-    <link rel="stylesheet" href="<?php echo is_HTTPS()?'https://staticfile.qnssl.com/normalize/3.0.3/normalize.min.css':'http://cdn.staticfile.org/normalize/3.0.3/normalize.min.css'; ?>">
+    <link rel="stylesheet" href="//cdn.staticfile.org/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.min.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('responsive.min.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('fonts/font-awesome.min.css?ver=0.0.1'); ?>">
 <?php if($this->options->dark==1): ?>    <link rel="stylesheet" href="<?php $this->options->themeUrl('dark.min.css'); ?>"><?php endif; ?>
-    <script type="text/javascript" src="<?php echo is_HTTPS()?'https://staticfile.qnssl.com/jquery/1.11.3/jquery.min.js':'http://cdn.staticfile.org/jquery/1.11.3/jquery.min.js'; ?>" integrity="sha384-6ePHh72Rl3hKio4HiJ841psfsRJveeS+aLoaEf3BWfS+gTF0XdAqku2ka8VddikM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.staticfile.org/jquery/1.11.3/jquery.min.js" integrity="sha384-6ePHh72Rl3hKio4HiJ841psfsRJveeS+aLoaEf3BWfS+gTF0XdAqku2ka8VddikM" crossorigin="anonymous"></script>
 
     <!--[if lt IE 9]>
-    <script src="<?php echo is_HTTPS()?'https://staticfile.qnssl.com/html5shiv/r29/html5.min.js':'http://cdn.staticfile.org/html5shiv/r29/html5.min.js'; ?>" integrity="sha384-CLKmepoEqm+8g1zYcrHJuGaM+IiwqEjhYZpW1kQf0++07t63QBTUcWijzFM0hvOJ" crossorigin="anonymous"></script>
-    <script src="<?php echo is_HTTPS()?'https://staticfile.qnssl.com/respond.js/1.4.2/respond.min.js':'http://cdn.staticfile.org/respond.js/1.4.2/respond.min.js'; ?>" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <script src="//cdn.staticfile.org/html5shiv/r29/html5.min.js" integrity="sha384-CLKmepoEqm+8g1zYcrHJuGaM+IiwqEjhYZpW1kQf0++07t63QBTUcWijzFM0hvOJ" crossorigin="anonymous"></script>
+    <script src="//cdn.staticfile.org/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
 
     <!-- 通过自有函数输出HTML头部信息 -->
