@@ -2,7 +2,7 @@
 
 <body class="post-template">
 
-	<header id="header" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/yasuko.jpg');} ?>" class="home-header blog-background banner-mask lazy no-cover" style="display: table; background-image: url(<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/yasuko.jpg');} ?>)">		
+	<header id="header" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/header.jpg');} ?>" class="home-header blog-background banner-mask lazy no-cover" style="display: table; background-image: url(<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/header.jpg');} ?>)">		
     	<div class="nav-header">
             <div class="nav-header-container">
                  <a href="<?php $this->options->siteUrl(); ?>" class="back-home">首页</a>
@@ -15,9 +15,6 @@
             	</h2>
 	            <time class="post-page-time"><?php $this->date('d M Y'); ?></time>
 	            <span class="post-page-author"><?php $this->author(); ?></span>
-                <span class="post-page-tags">
-                    <?php $this->tags(' ', true, '博主太懒'); ?>
-               	</span>
            	</div>
         </div>
         <div class="arrow_down">
@@ -30,9 +27,6 @@
 	     	<section class="post-content">
 	     		<div class="single-post-inner">
 	        		<?php $this->content(); ?>
-	       			<div class="tag-box">
-	          			<?php $this->tags(' ', true, '博主太懒'); ?>
-	        		</div>
 			        <div class="money-like" id="like-money">
 			            <div class="reward-button">赏
 			            	<span class="money-code">

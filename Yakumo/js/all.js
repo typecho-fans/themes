@@ -1,3 +1,11 @@
+function auhtor() {
+	console.log("主题作者：八云酱");
+	console.log("作者主页：https://www.bayun.org");
+	console.log("演示地址：https://demo.bayun.org/yakumo")
+	console.log("主题文档：https://www.bayun.org/yakumo");
+	console.log("主题下载：https://github.com/ryanwschina/Yakumo");
+	console.log("主题交流：QQ群386439328");
+}
 function loadJS(A, e, t) {
     var o = !!window.ActiveXObject,
     a = o && !window.XMLHttpRequest,
@@ -43,7 +51,8 @@ General = {
         $("body").hasClass("post-template") && (General.updateImageWidth(), General.rewardLoader()),
         General.webFontLoader(),
         General.scrollToPos(),
-        General.arrowEvent()
+        General.arrowEvent(),
+        auhtor()
     },
     updateImageWidth: function() {
         function A() {

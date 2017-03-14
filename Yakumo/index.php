@@ -11,7 +11,7 @@
 
 <body class="home-template">
 
-	<header id="header" data-url="<?php $this->options->themeUrl('img/yasuko.jpg'); ?>" class="home-header blog-background banner-mask lazy no-cover" style="display: table; background-image: url(<?php $this->options->themeUrl('img/yasuko.jpg'); ?>)">
+	<header id="header" data-url="<?php $this->options->themeUrl('img/header.jpg'); ?>" class="home-header blog-background banner-mask lazy no-cover" style="display: table; background-image: url(<?php $this->options->themeUrl('img/header.jpg'); ?>)">
 	        <div class="nav-header-container">
 	            <a href="<?php $this->options->siteUrl(); ?>" class="svg-logo" target="_blank">
 	                <span class="svg-logo"> 
@@ -22,7 +22,16 @@
 	        <div class="header-wrap">
 	        <div class="home-info-container">
 	            <a href="<?php $this->options->siteUrl(); ?>"><h2>Stay before every beautiful thoughts</h2></a>
-	            <h4>在每一个美好的思想前停留</h4>
+	            <h4>
+                    <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
+                    <?php while($pages->next()): ?>
+
+                    <a style="color:#fff" <?php if($this->is('page', $pages->slug)): ?><?php endif; ?> href="<?php $pages->permalink(); ?>">
+                    	<?php $pages->title(); ?>
+                    </a>
+                    <?php endwhile; ?>
+                    <a style="color:#fff" href="https://www.bayun.org" target="_blank">八云酱</a>
+				</h4>
 	        </div>
 	        <div class="arrow_down" data-offset="-45">
 	               <a href="javascript:;"></a>
@@ -37,16 +46,23 @@
 			    <section class="post-excerpt">
 				    <a href="<?php $this->permalink() ?>">
 				        <p>
-				        <img class="lazy" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/yasuko.jpg');} ?>" src="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/yasuko.jpg');} ?>" style="display: block;">
+				        <img class="lazy" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/header.jpg');} ?>" src="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/header.jpg');} ?>" style="display: block;">
 				        </p>
 				    </a>
 				    <div class="info-mask">
 						<div class="mask-wrapper">
-							<h2 class="post-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
+							<h2 class="post-title">
+								<a href="<?php $this->permalink() ?>">
+									<?php $this->title() ?>
+								</a>
+								<span style="font-size: 1.6rem">
+									<?php $this->viewsNum(); ?>
+								</span>
+							</h2>
 							<div class="post-meta">
-								<span class="post-time"><time datetime="{{date format='YYYY-MM-DD'}}"><?php $this->date('d M Y'); ?></time></span>
+								<span class="post-time"><?php $this->date('d M Y'); ?></span>
 								<span class="post-tags">
-									<?php $this->tags(' ', true, '博主太懒'); ?>
+									<?php $this->tags(' ', true, ''); ?>
 								</span>
 							</div>
 						</div>
@@ -59,10 +75,14 @@
 			    		<div class="excert-detail-container">
 					        <div class="post-meta">
 					            <span class="post-time"><time><?php $this->date('d M Y'); ?></time></span>
-					            <h2 class="post-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
+					            <h2 class="post-title">
+					            	<a href="<?php $this->permalink() ?>">
+					            		<?php $this->title() ?>
+					            	</a>
+					            </h2>
 					            <p class="post-short-intro"><?php $this->description(); ?></p>
 					            <span class="post-tags">
-					           		<?php $this->tags(' ', true, '博主太懒'); ?>
+					           		<?php $this->tags(' ', true, ''); ?>
 					            </span>
 					            <a href="<?php $this->permalink() ?>" class="btn-post-excerpt">阅读原文</a>
 					        </div>

@@ -1,7 +1,8 @@
 	<footer class="site-footer clearfix ">
-	    <section class="copyright "><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a> &copy; <?php echo date("Y"); ?></section>
-	    <section><a href="https://www.bayun.org" target="_blank">八云酱 </a><a href="https://zhuanlan.zhihu.com/bayun" target="_blank"> 知乎专栏</a></section>       
-	    <section>京ICP备16042939号</section>    
+	    <section class="copyright "><b><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a> &copy; <?php echo date("Y"); ?></b></section>
+	    <section><b>主题作者<a href="https://www.bayun.org" target="_blank"> 八云酱 </a></b></section>  
+	    <section><b>样式作者<a href="https://luolei.org" target="_blank"> 罗磊 </a></b></section>       
+	    <section><b>京ICP备16042939号</b></section>    
 	</footer>  
 	<?php $this->footer(); ?>
 </body>	
