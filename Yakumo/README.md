@@ -2,10 +2,6 @@
 
 现在又在八云酱主题的基础上，将主题移植到Typecho平台，取名为Yakumo（“八云”日语）。两个版本功能暂时相差无几。因为博主个人PHP水平比Node.js稍好一点，同时Typecho也比Ghost开发方便得多，所以之后Typecho版本主题功能肯定会比Ghost版本多一些。甚至博主自己可能会将博客从Ghost平台转移到Typecho平台。
 
-```html
-主题演示地址：https://demo.bayun.org
-```
-
 废话这么多，现在来详细介绍一下Yakumo主题的一些细节。
 
 ## 评论系统
