@@ -159,9 +159,11 @@ blockquote{overflow:hidden;border:0;padding:8px 12px;margin:5px 0 15px;backgroun
 	position: relative;
 }
 
+
 .comments-field {
-	clear: both;
 	margin: 0 0 1em;
+	padding-right: 1%;
+	font-size: 14px;
 }
 .comments-field textarea {
 	height: 12em;
@@ -169,6 +171,20 @@ blockquote{overflow:hidden;border:0;padding:8px 12px;margin:5px 0 15px;backgroun
 	max-height: 24em;
 	min-height: 8em;
 	resize: vertical;
+	padding: 0.85em 1.2em;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 0.3125em;
+	background-color: #FFFFFF;
+}
+.ui.form .two.fields > .comments-field {
+	width:50%;
+	float: left;
+}
+.comments-field input {
+	background-color: #FFFFFF;
+	padding: 0.85em 1.2em;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 0.3125em;
 }
 .ui.form textarea, .ui.form input[type="text"], .ui.form input[type="email"], .ui.form input[type="date"], .ui.form input[type="password"], .ui.form input[type="number"], .ui.form input[type="url"], .ui.form input[type="tel"], .ui.form .ui.input {
 	width: 100%;
