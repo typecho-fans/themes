@@ -34,7 +34,7 @@
             <div class="comments-field">
                 <textarea rows="8" cols="50" id="comment-content" placeholder="<?php _e('回复内容'); ?><?php _e(' (必填)')?>" name="text"><?php $this->remember('text'); ?></textarea>
             </div>
-            <button type="submit" id="comment-submit" class="btn btn-success"><?php _e('提交评论 (Ctrl + Enter)'); ?></button>
+            <button type="submit" id="comment-submit" class="btn btn-success"><?php _e('提交评论'); ?></button>
         </form>
     </div>
     </div>
