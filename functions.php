@@ -43,4 +43,9 @@ function themeConfig($form) {
 
     $siteIcon = new Typecho_Widget_Helper_Form_Element_Text('sideName', null, null, _t('侧栏用户名'), _t('在这里填入一个左侧显示的用户名, 默认不显示'));
     $form->addInput($siteIcon);
+
+    $showBlock = new Typecho_Widget_Helper_Form_Element_Checkbox('ShowBlock', array(
+        'ShowPostBottomBar' => _t('文章页显示上一篇和下一篇')),
+        array('ShowPostBottomBar'), _t('显示设置'));
+    $form->addInput($showBlock->multiMode());
 }

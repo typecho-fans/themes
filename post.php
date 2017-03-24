@@ -33,7 +33,16 @@
             </article>
 
         </div>
+    <?php if (!empty($this->options->ShowBlock) && in_array('ShowPostBottomBar', $this->options->ShowBlock)): ?>
+        <div class="block">
+            <ul class="post-near">
+                <li>上一篇: <?php $this->thePrev('%s','没有了'); ?></li>
+                <li>下一篇: <?php $this->theNext('%s','没有了'); ?></li>
+            </ul>
+        </div>
+    <?php endif; ?>
         <?php $this->need('comments.php'); ?>
+
     </div>
     <div class="col-md-4">
         <?php $this->need('sidebar.php'); ?>
