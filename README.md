@@ -37,4 +37,4 @@
 [Slanted](/Slanted) :dart: | (WordPress移植)响应式多配色个性主题 | [@DT27](https://github.com/DT27)
 [Twenty Fourteen](/twentyfourteen) | (WordPress移植)2014默认双栏主题 | [@公子](https://github.com/lizheming)
 [Twenty Twelve](/twentytwelve) | (WordPress移植)2012默认极简主题 | [@公子](https://github.com/lizheming)
-[Yakumo](/Yakumo) :dart: | 响应式单栏大Banner主题 | [@ryanwschina](https://github.com/ryanwschina)
+[Yakumo](/Yakumo) :dart: | 响应式单栏大Banner主题 | [@bayunjiang](https://github.com/bayunjiang)
