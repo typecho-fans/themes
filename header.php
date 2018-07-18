@@ -17,6 +17,17 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/font-awesome.min.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/main.css'); ?>">
     <!-- 通过自有函数输出HTML头部信息 -->
+    <?php if(class_exists('Snow_Plugin') && isset($this->options->plugins['activated']['Snow'])): ?>
+    <style>
+    #logo:after{
+        content:url(<?php $this->options->themeUrl('img/hat.png'); ?>);
+        display:block;
+        position:absolute;
+        top:25px;
+        left:180px;/* 根据实际情况修改定位*/
+    }
+    </style>
+    <?php endif; ?>
     <?php $this->header(); ?>
 </head>
 <body>

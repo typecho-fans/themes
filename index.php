@@ -1,10 +1,10 @@
 <?php
 /**
  * 绿葡萄的主题, 一款有科技感颗粒，自定义头像的， 好看的标签云的响应式模板。
-
+ *
  * @package GreenGrapes
  * @author hongweipeng
- * @version 1.0.1
+ * @version 1.0.2
  * @link https://github.com/hongweipeng/GreenGrapes
  */
 $this->need('header.php');
@@ -33,7 +33,7 @@ $this->need('header.php');
                     <div class="pull-right post-info">
                         <span><i class="fa fa-calendar"></i> <?php $this->date('Y-m-d'); ?></span>
                         <span><i class="fa fa-user"></i> <a href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></span>
-                        <span><i class="fa fa-comment"></i> <a href="<?php $this->permalink() ?>#comments"><span class="ds-thread-count" data-thread-key="<?php echo $this->cid;?>"></span></a></span>
+                        <span><i class="fa fa-comment"></i> <a href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('%d 条评论'); ?></a></span>
                     </div>
                 </section>
             </article>
