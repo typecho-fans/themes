@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2016/10/8
- * Time: 16:10
- */
 
 /**
  * 随机文章
@@ -19,12 +13,17 @@ function theme_random_posts(){
         'xformat' => '<li class="list-group-item clearfix"><a href="{permalink}" title="{title}">{title}</a></li>'
     );
     $db = Typecho_Db::get();
+    $rand = "RAND()";
+    if (stripos($db->getAdapterName(), 'sqlite') !== false) {
+        $rand = "RANDOM()";
+    }
+
     $sql = $db->select()->from('table.contents')
         ->where('status = ?','publish')
         ->where('type = ?', 'post')
-        ->where('created <= unix_timestamp(now())', 'post') //添加这一句避免未达到时间的文章提前曝光
+        ->where('created <= ' . Helper::options()->gmtTime, 'post') //添加这一句避免未达到时间的文章提前曝光
         ->limit($defaults['number'])
-        ->order('RAND()');
+        ->order($rand);
     $result = $db->fetchAll($sql);
     echo $defaults['before'];
     foreach($result as $val){
@@ -48,4 +47,62 @@ function themeConfig($form) {
         'ShowPostBottomBar' => _t('文章页显示上一篇和下一篇')),
         array('ShowPostBottomBar'), _t('显示设置'));
     $form->addInput($showBlock->multiMode());
+}
+
+/**
+ * 重写评论显示函数
+ */
+function threadedComments($comments, $options){
+    $singleCommentOptions = $options;
+    $commentClass = '';
+    if ($comments->authorId) {
+        if ($comments->authorId == $comments->ownerId) {
+            $commentClass .= ' comment-by-author';
+        } else {
+            $commentClass .= ' comment-by-user';
+        }
+    }
+
+    $commentLevelClass = $comments->levels > 0 ? ' comment-child' : ' comment-parent';
+
+    ?>
+<li itemscope itemtype="http://schema.org/UserComments" id="<?php $comments->theId(); ?>" class="comment-li<?php
+if ($comments->levels > 0) {
+    echo ' comment-child';
+    $comments->levelsAlt(' comment-level-odd', ' comment-level-even');
+} else {
+    echo ' comment-parent';
+}
+$comments->alt(' comment-odd', ' comment-even');
+echo $commentClass;
+?>">
+
+    <div class="comment-author" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="image"><?php $comments->gravatar($singleCommentOptions->avatarSize, $singleCommentOptions->defaultAvatar); ?></span>
+
+    </div>
+    <div class="comment-body">
+        <cite class="fn" itemprop="name"><?php $singleCommentOptions->beforeAuthor();
+            $comments->author();
+            $singleCommentOptions->afterAuthor(); ?></cite>
+        <div class="comment-content" itemprop="commentText">
+            <?php $comments->content(); ?>
+        </div>
+        <div class="comment-footer">
+            <time itemprop="commentTime" datetime="<?php $comments->date('c'); ?>"><?php $singleCommentOptions->beforeDate();
+                $comments->date($singleCommentOptions->dateFormat);
+                    $singleCommentOptions->afterDate(); ?></time>
+            <?php $comments->reply($singleCommentOptions->replyWord); ?>
+        </div>
+    </div>
+    <?php if ($comments->children) { ?>
+        <div class="comment-children" itemprop="discusses">
+            <?php $comments->threadedComments(); ?>
+        </div>
+    <?php } ?>
+    
+    
+</li>
+<?php
+
 }

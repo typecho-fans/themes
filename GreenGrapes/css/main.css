@@ -139,7 +139,7 @@ blockquote{overflow:hidden;border:0;padding:8px 12px;margin:5px 0 15px;backgroun
 .article-content table td,.article-content table th {
 	border:1px solid #e6e6e6;
 	padding:5px 8px;
-	word-break:normal;
+	word-break: break-all;
 }
 .article-content table th {
 	background:#f3f3f3;
@@ -157,6 +157,7 @@ blockquote{overflow:hidden;border:0;padding:8px 12px;margin:5px 0 15px;backgroun
 	margin-bottom: 20px;
 	padding: 15px;
 	position: relative;
+	border: 1px solid #ddd;
 }
 
 
@@ -213,11 +214,15 @@ blockquote{overflow:hidden;border:0;padding:8px 12px;margin:5px 0 15px;backgroun
 
 .ui.ribbon.label {
 	position: relative;
-	left: -2rem;
-	padding-left: 2rem;
-	border-radius: 0 4px 4px 0;
+	/*left: -2rem;*/
+	/*padding-left: 2rem;*/
+	border-radius: 4px;
 	border-color: rgba(0, 0, 0, 0.15);
 	font-size: 1em;
+}
+
+.ui.ribbon.label .comment-highlight {
+	color: #d32 !important;
 }
 
 .block {
@@ -243,23 +248,20 @@ blockquote{overflow:hidden;border:0;padding:8px 12px;margin:5px 0 15px;backgroun
 
 /* 侧边栏友情链接和回复列表中的头像 */
 img.avatar {
-	float: left;
-	height: 40px;
-	width: 40px;
-	margin-right: 10px;
+	background-color: #fff;
 	border-radius: 50px;
-
+	box-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	float: left;
+	position: relative;
+	height: 50px;
+	width: 50px;
+	margin-top: 10px;
 	transition: 500ms;
 	-o-transition: 500ms;
 	-moz-transition: 500ms;
 	-webkit-transition: 500ms;
 }
-img.avatar:hover {
-	-moz-box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.1),1px 1px 30px 5px rgba(0, 0, 0, 0.2);
-	box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.1),1px 1px 30px 5px rgba(0, 0, 0, 0.2);
 
-	opacity: .8;
-}
 .comment-list .comment-author img.avatar:hover {
 	transform: rotate(360deg);
 	-o-transform: rotate(360deg);
@@ -271,42 +273,44 @@ img.avatar:hover {
 /* 评论列表样式 */
 .comment-list {
 	padding-left: 0;
-}
-.comment-list, .comment-children {
 	list-style: none;
 }
-.comment-list .comment-author {
-	float: left;
-}
-.comment-list .comment-content {
+.comment-list .comment-li {
+	border-top: 1px solid rgba(0, 0, 0, 0.13);
 	clear: both;
-	color:#555;
-	margin-left: 50px;
-	font-size: 15px;
+	list-style: outside none none;
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
 }
-.comment-list .comment-meta a {
-	color: rgba(0, 0, 0, 0.4);
-	font-size: 15px;
-}
-.comment-list .comment-meta {
-	float: right;
-}
-.comment-list .comment-reply {
 
-	font-size: 13px;
-	margin-bottom: 10px;
-	margin-left: 50px;
+.comment-list .comment-body {
+	padding: 10px 0 10px 60px;
+}
+.comment-list .comment-body cite.fn {
+	color: #555555;
+	font-style: normal;
+}
+.comment-list .comment-body a {
+	font-style: normal;
+}
 
-	transition: opacity 0.1s ease-out;
-	-o-transition: opacity 0.1s ease-out;
-	-moz-transition: opacity 0.1s ease-out;
-	-webkit-transition: opacity 0.1s ease-out;
+.comment-list .comment-content p {
+	margin: 0.5em 0;
+}
+.comment-list .comment-footer {
+	line-height: 1.5em;
+}
+.comment-list .comment-footer time {
+	color: #999;
+	font-size: 12px;
+	margin-right: 8px;
 }
 
 .comment-parent>.comment-children {
 	margin-left: 30px;
 	padding-left: 30px;
-	border-left: 1px dotted rgba(0, 0, 0, 0.35);
+	/*border-left: 1px dotted rgba(0, 0, 0, 0.35);*/
 
 }
 
@@ -322,6 +326,8 @@ img.avatar:hover {
 #pic img{width:180px;height:180px;border-radius:50%;}
 #logo{width:180px;height:180px;margin:0 auto 15px;}
 #logo img{border-radius:100px;width:180px;height:180px;}
+
+
 #logo #jp_container{width:0px!important;position: absolute;left: 41.5px;top: 41.5px;padding: 0!important;}
 #logo  #jp_container .jp-pause{background: url(../images/logoplayer2.png) no-repeat;margin: 25px;top: 50%;left: 50%;width:45px;height:45px;cursor:pointer;position:absolute;}
 #logo  #jp_container .jp-play{background:none;margin: 25px;top: 50%;left: 50%;width:45px;height:45px;cursor:pointer;position:absolute;}
@@ -449,12 +455,12 @@ footer {padding: 20px;margin: 20px 0 0;text-align:center;background-color:#fffff
 }
 @media screen and (min-width:750px) and (max-width:1100px){
 	.m-header-open,.m-container-open,.m-footer-open{left:30% !important;}
-	#m-nav{left:-30%;width:30%;}
+	#m-nav{left:-30%;width:25%;}
 	.post-article .text .tags-list{width:25%}
 }
 @media screen and (max-width:750px){
 	.m-header-open,.m-container-open,.m-footer-open{left:50% !important;}
-	#m-nav{left:-50%;width:50%;}
+	#m-nav{left:-50%;width:33.33%;}
 	.post-article .text .tags-list{width:50%}
 	#smilies-box{width: 280px;}
 }

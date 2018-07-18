@@ -18,9 +18,6 @@
         <p>&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
         <?php _e('All Rights Reserved. 版权所有.'); ?>
         </p>
-        <p>
-            闽ICP备15027255号-1
-        </p>
     </div>
 </footer>
 <script src = "<?php $this->options->themeUrl('js/jquery2.14.min.js'); ?>"></script>
