@@ -5,6 +5,7 @@
     <meta charset="<?php $this->options->charset(); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="<?php echo $this->options->dark==1?'#d60055':'#00b2d7'; ?>">
     <title><?php if($this->_currentPage>1): ?>第 <?php echo $this->_currentPage ?> 页 - <?php endif; ?><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.min.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('responsive.min.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('fonts/font-awesome.min.css?ver=0.0.1'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('fonts/font-awesome.min.css?ver=1.1.0'); ?>">
 <?php if($this->options->dark==1): ?>    <link rel="stylesheet" href="<?php $this->options->themeUrl('dark.min.css'); ?>"><?php endif; ?>
     <script type="text/javascript" src="//cdn.staticfile.org/jquery/1.11.3/jquery.min.js" integrity="sha384-6ePHh72Rl3hKio4HiJ841psfsRJveeS+aLoaEf3BWfS+gTF0XdAqku2ka8VddikM" crossorigin="anonymous"></script>
 

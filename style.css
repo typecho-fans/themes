@@ -53,7 +53,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* ------------------------------------------------------------------------- *
  *  Base Styles
 /* ------------------------------------------------------------------------- */
-body { background: #fff; font-size: 15px; line-height: 1.5em; color: #555; font-weight: 300; }
+body { background: #fff; font-size: 16px; line-height: 1.5em; color: #555; font-weight: 400; }
 ::selection { background: #00b2d7; color: #fff; }
 ::-moz-selection { background: #00b2d7; color: #fff; }
 a { color: #00b2d7; text-decoration: none; outline: 0; }
@@ -90,7 +90,7 @@ strong { font-weight: 600; }
 
 /*  base : fonts
 /* ------------------------------------ */
-body { font-family: "Roboto Condensed", Arial, sans-serif; }
+body { font-family:"PingFang SC","Microsoft YaHei",SimHei,Arial,SimSun; }
 
 
 /* latin */
@@ -191,7 +191,7 @@ input, textarea, button, select, label { font-family: inherit; }
 
 /*  base : entry
 /* ------------------------------------ */
-.entry { font-size: 15px; line-height: 1.6em; }
+.entry { font-size: 16px; line-height: 1.6em; }
 .entry p,
 .entry dd { margin-bottom: 1em; }
 .entry dt { color: #222; }
@@ -711,7 +711,7 @@ box-shadow: inset 1px 0 0 rgba(255,255,255,0.05); }
 .post-title a { color: #555; border-bottom: 2px solid #eee; }
 .post-title a:hover { color: #00b2d7; border-color: #ccc; }
 
-.entry.excerpt { font-size: 16px; color: #bbb; }
+.entry.excerpt { font-size: 16px; color: #555; }
 
 .post-comments { background: #eee; float: right; margin-top: 5px; font-size: 12px; line-height: 20px; display: block; border-radius: 3px; }
 .post-comments > a:last-child:before { content:''; display: inline-block; border-left: 4px solid transparent; border-right: 4px solid #eee; border-top: 4px solid #eee; border-bottom: 4px solid transparent; position: absolute; top: 24px; left: 10px; }
@@ -1441,8 +1441,7 @@ hr, .hr { border: 0; background: #eee; height: 1px; margin: 30px 0; }
 	color: #fff;
 }
 .entry code, .comment-content code, pre {
-	font-family: Source Code Pro,Consolas,Menlo,Monaco,Courier New,monospace;
-	font-size:90%;
+	font-family: Source Code Pro,Consolas,"PingFang SC","Microsoft YaHei",SimHei,Arial,SimSun;
 }
 /*  多说评论
 /* ------------------------------------ */

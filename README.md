@@ -1,7 +1,8 @@
 # [Slanted](https://dt27.org/Slanted-for-Typecho/)
 
 ![](https://dt27.org/usr/uploads/2016/03/2586752105.png)
-
+![](https://dt27.org/usr/uploads/2017/06/1430667370.jpg)
+![Slanted手机界面](https://cdn.youjb.com/images/2017/06/09/Screenshot_20170609-085725ddb09.md.png)
 Typecho Theme  
 移植自 Wordpress 主题 [slanted](http://alxmedia.se/themes/slanted/)  
 
@@ -22,20 +23,21 @@ Typecho Theme
 * 将文章分类放置到页眉导航栏以下拉菜单形式显示，同时可以自由选择要显示的分类。
 * 可自由选择页眉导航栏中要显示的独立页面，显示名以短标题```shotTitle```字段优先。
 * 为文章及独立页面扩展了多项自定义字段，且无需您手动添加，例如文章缩略图```thumbUrl```，独立页面短标题```shotTitle```、页眉主```heading```副```subheading```文字描述等。
+* 沉浸式状态栏```new```
 
 ## ToDo
+- [x] 主题配色扩充
+- [x] 博主社交链接模块可选显示
+- [x] 百度分享链接模块可选显示
 - [ ] 页尾动态栏个数及项目自定义
 - [ ] 侧边栏项目扩充
 - [ ] 非内容页侧边栏显示
 - [ ] 自定义站点 Logo 直接上传
-- [ ] 主题配色扩充
-- [x] 博主社交链接模块可选显示
-- [x] 百度分享链接模块可选显示
 
 ## Typecho 主题安装及使用
 0. **主题更新升级时，请先切换回默认主题后后再上传**
 1. [点此](https://github.com/DT27/Slanted/archive/master.zip)下载主题
-2. 将下载的文件解压，文件夹重命名为`Slanted`，上传到Typecho`usr/themes/`目录下
+2. 将下载的文件解压，文件夹重命名为`Slanted`（！**重要**！），上传到Typecho`usr/themes/`目录下
 3. 登陆后台，在`控制台`下拉菜单中点击`外观`进入`网站外观`
 4. 找到`Slanted`，点击`启用`
 5. 根据需要更新设置外观
