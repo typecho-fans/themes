@@ -23,18 +23,20 @@
 
  >主题目录内若无license则视作采用与Typecho相同的[GPL2](https://github.com/typecho/typecho/blob/master/LICENSE.txt)开源许可
 
-### 作品索引 (99)
+### 作品索引 (11)
 
 ###### :warning:：已失效，暂不可用。:dart:：需插件配合，详见说明。
 
 名称 | 简介 | 作者
 ---- | :----: | ----:
 [GreenGrapes](/GreenGrapes) | 响应式绿色科技感双栏主题 | [@hongweipeng](https://github.com/hongweipeng)
-[JieXiang](/jiexiang) | “结香”多配色简洁主题 | [@ShingChi](https://github.com/shingchi)
-[Publish](/publish) | (WordPress移植)响应式清新双栏主题 | [@公子](https://github.com/lizheming)
-[Pure](/pure) | “纯净之美”灰白素雅主题 | [@ShingChi](https://github.com/shingchi)
-[Silence](/silence) | “寂静之声”多配色古典主题 | [@ShingChi](https://github.com/shingchi)
+[Nova](/Nova) :dart: | 仿Farbox响应式极简单栏主题 | [@啸傲居士](https://github.com/shuxiao9058)
 [Slanted](/Slanted) :dart: | (WordPress移植)响应式多配色个性主题 | [@DT27](https://github.com/DT27)
+[Yakumo](/Yakumo) :dart: | (Ghost移植)响应式大Banner单栏主题 | [@八云酱](https://github.com/bayunjiang)
+[JieXiang](/jiexiang) | “结香”多配色简洁双栏主题 | [@ShingChi](https://github.com/shingchi)
+[PosArt](/posart) | 响应式蓝灰色无图单栏主题 | [@Kunr](https://github.com/Rakume)
+[Publish](/publish) | (WordPress移植)响应式清新双栏主题 | [@公子](https://github.com/lizheming)
+[Pure](/pure) | “纯净之美”灰白素雅双栏主题 | [@ShingChi](https://github.com/shingchi)
+[Silence](/silence) | “寂静之声”多配色古典风格主题 | [@ShingChi](https://github.com/shingchi)
 [Twenty Fourteen](/twentyfourteen) | (WordPress移植)2014默认双栏主题 | [@公子](https://github.com/lizheming)
 [Twenty Twelve](/twentytwelve) | (WordPress移植)2012默认极简主题 | [@公子](https://github.com/lizheming)
-[Yakumo](/Yakumo) :dart: | (Ghost移植)响应式单栏大Banner主题 | [@八云酱](https://github.com/bayunjiang)
