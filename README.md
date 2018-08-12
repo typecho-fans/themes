@@ -26,23 +26,23 @@
 
 4. 主题目录内应有**README**文档便于用户阅读。
 
- > `N/A`为不可用，`Special`为安装用法特殊。
+ > `N/A`为不可用，`Special`为需要插件配合。
 
-### 作品索引 (11)
+### 作品索引 (12)
 
 ###### 注意排序与目录列表相同，自增上方插件数，简介不要过长，多人作者用,空格分隔。
 
-名称 | 简介 | 作者
----- | :----: | ----:
-[Bigfa](Bigfa) | 响应式纯白简约风双栏主题 | [John](https://github.com/jozhn)
-[GreenGrapes](GreenGrapes) | 响应式绿色科技感双栏主题 | [hongweipeng](https://github.com/hongweipeng)
-[Nova](Nova) :dart: | 仿Farbox响应式极简单栏主题 | [啸傲居士](https://github.com/shuxiao9058)
-[Slanted](Slanted) :dart: | (WordPress移植)响应式多配色个性主题 | [DT27](https://github.com/DT27)
-[Yakumo](Yakumo) :dart: | (Ghost移植)响应式大Banner单栏主题 | [八云酱](https://github.com/bayunjiang)
-[JieXiang](jiexiang) | “结香”多配色简洁双栏主题 | [ShingChi](https://github.com/shingchi)
-[PosArt](posart) | 响应式蓝灰色无图单栏主题 | [Kunr](https://github.com/Rakume)
-[Publish](publish) | (WordPress移植)响应式清新双栏主题 | [公子](https://github.com/lizheming)
-[Pure](pure) | “纯净之美”灰白素雅双栏主题 | [ShingChi](https://github.com/shingchi)
-[Silence](silence) | “寂静之声”多配色古典风格主题 | [ShingChi](https://github.com/shingchi)
-[Twenty Fourteen](twentyfourteen) | (WordPress移植)2014默认双栏主题 | [公子](https://github.com/lizheming)
-[Twenty Twelve](twentytwelve) | (WordPress移植)2012默认极简主题 | [公子](https://github.com/lizheming)
+名称 | 简介 | 版本 | 作者 | zip包
+---- | :----: | :---: | ----: | :----:
+[Bigfa](Bigfa) | 响应式纯白简约风双栏主题 | 1.0 | [John](https://github.com/jozhn) | [Download]()
+[GreenGrapes](GreenGrapes) | 响应式绿色科技感双栏主题 | 1.0.2 | [hongweipeng](https://github.com/hongweipeng) | [Download]()
+[Nova](Nova) :dart: | 仿Farbox响应式极简单栏主题 | 1.0.1 | [jiya](https://github.com/shuxiao9058) | [Special]()
+[Slanted](Slanted) :dart: | (WordPress移植)响应式多配色个性主题 | 1.1.0 | [DT27](https://github.com/DT27) | [Special]()
+[Yakumo](Yakumo) :dart: | (Ghost移植)响应式大Banner单栏主题 | 1.0.0 | [八云酱](https://github.com/bayunjiang) | [Special]()
+[JieXiang](jiexiang) | “结香”多配色简洁双栏主题 | 1.0.1 | [ShingChi](https://github.com/shingchi) | [Download]()
+[PosArt](posart) | 响应式蓝灰色无图单栏主题 | 1.0 | [Kunr (Lingoys Art)](https://github.com/Rakume) | [Download]()
+[Publish](publish) | (WordPress移植)响应式清新双栏主题 | 1.3 | [Austin](https://github.com/lizheming) | [Download]()
+[Pure](pure) | “纯净之美”灰白素雅双栏主题 | 1.0.0 | [ShingChi](https://github.com/shingchi) | [Download]()
+[Silence](silence) | “寂静之声”多配色古典风格主题 | 2.0.0 | [ShingChi](https://github.com/shingchi) | [Download]()
+[Twenty Fourteen](twentyfourteen) | (WordPress移植)2014默认双栏主题 | 1.1 | [公子](https://github.com/lizheming) | [Download]()
+[Twenty Twelve](twentytwelve) | (WordPress移植)2012默认极简主题 | 1.2 | [怡红公子](https://github.com/lizheming) | [Download]()
