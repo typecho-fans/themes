@@ -10,7 +10,7 @@
 
 ### 使用帮助
 
-作者参与维护可点击右上角绿色按钮处克隆git地址或打包下载所有主题，一般用户使用下方索引表格中的Download链接下载所需主题zip包即可。
+点击右上角绿色按钮处克隆git地址或打包下载所有主题。
 
 ### 作者须知
 
@@ -36,9 +36,9 @@
 ---- | :----: | :---: | ----: | :----:
 [Bigfa](Bigfa) | 响应式纯白简约风双栏主题 | 1.0 | [John](https://github.com/jozhn) | [Download]()
 [GreenGrapes](GreenGrapes) | 响应式绿色科技感双栏主题 | 1.0.2 | [hongweipeng](https://github.com/hongweipeng) | [Download]()
-[Nova](Nova) :dart: | 仿Farbox响应式极简单栏主题 | 1.0.1 | [jiya](https://github.com/shuxiao9058) | [Special]()
-[Slanted](Slanted) :dart: | (WordPress移植)响应式多配色个性主题 | 1.1.0 | [DT27](https://github.com/DT27) | [Special]()
-[Yakumo](Yakumo) :dart: | (Ghost移植)响应式大Banner单栏主题 | 1.0.0 | [八云酱](https://github.com/bayunjiang) | [Special]()
+[Nova](Nova) | 仿Farbox响应式极简单栏主题 | 1.0.1 | [jiya](https://github.com/shuxiao9058) | [Special]()
+[Slanted](Slanted) | (WordPress移植)响应式多配色个性主题 | 1.1.0 | [DT27](https://github.com/DT27) | [Special]()
+[Yakumo](Yakumo) | (Ghost移植)响应式大Banner单栏主题 | 1.0.0 | [八云酱](https://github.com/bayunjiang) | [Special]()
 [JieXiang](jiexiang) | “结香”多配色简洁双栏主题 | 1.0.1 | [ShingChi](https://github.com/shingchi) | [Download]()
 [PosArt](posart) | 响应式蓝灰色无图单栏主题 | 1.0 | [Kunr (Lingoys Art)](https://github.com/Rakume) | [Download]()
 [Publish](publish) | (WordPress移植)响应式清新双栏主题 | 1.3 | [Austin](https://github.com/lizheming) | [Download]()
