@@ -21,10 +21,11 @@
                 </div>
                 <div class="tab-pane fade" id="sidebar-comment">
                     <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
+                    <ul class="list-group">
                     <?php while($comments->next()): ?>
                         <li class="list-group-item clearfix"><?php $comments->author(false); ?>：<a href="<?php $comments->permalink(); ?>" target="_blank"><?php $comments->excerpt(35, '...'); ?></a></li>
                     <?php endwhile; ?>
-                        </ul>
+                    </ul>
                 </div>
                 <div class="tab-pane nav bs-sidenav fade" id="sidebar-rand">
                     <?php theme_random_posts();?>
@@ -37,7 +38,7 @@
         <div class="panel panel-green hidden-xs">
             <div class="panel-heading"><i class="fa fa-link fa-fw"></i> 友情链接</div>
             <ul class="list-group">
-                <?php Links_Plugin::output('<li class="list-group-item"><a href="{url}" target="_blank">{name}</a></li>', 10, NULL, true); ?>
+                <?php Links_Plugin::output('<li class="list-group-item"><a href="{url}" target="_blank" rel="noopener noreferrer">{name}</a></li>', 10, NULL, true); ?>
             </ul>
         </div>
     </aside>

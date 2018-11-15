@@ -31,6 +31,7 @@
     <?php $this->header(); ?>
 </head>
 <body>
+<?php if(!($this->is('post') || $this->is('page')) || empty($this->options->ShowBlock) || !in_array('HeaderHiddenInDetail', $this->options->ShowBlock)): ?>
 <header id="l-header" class="l-header" style="background-image:url(<?php $this->options->bgImg(); ?>">
     <div class="hdbg"></div>
     <div class="hdbg2"></div>
@@ -43,6 +44,7 @@
     </div>
     <div id="header-canvas" style="width: 100%;height: 100%"></div>
 </header>
+<?php endif; ?>
 <div id="m-nav" class="m-nav">
     <div class="m-nav-all">
         <div class="m-logo-url">
