@@ -360,7 +360,7 @@ img.avatar {
 .m-nav .nav li:hover a,.m-nav .nav li.current-menu-item a,.m-nav .nav li.current-menu-parent a,.m-nav .nav li.current_page_item a,.m-nav .nav li.current-post-ancestor a{background-color:#404040;}
 .m-nav .nav li ul{background-color:#404040;}
 
-.container{min-width:320px;margin:10px auto;position:relative;width:auto;}
+.container{max-width:1170px;min-width:320px;margin:10px auto;position:relative;width:auto;}
 
 #content{margin-right: 370px;}
 .post-article{background: #fff;margin-bottom: 10px;overflow: hidden;padding: 0 20px 20px;}
