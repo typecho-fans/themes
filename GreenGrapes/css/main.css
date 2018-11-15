@@ -21,7 +21,7 @@ blockquote{overflow:hidden;border:0;padding:8px 12px;margin:5px 0 15px;backgroun
 	padding: 5px;
 	text-align: center;
 }
-.col-md-8 {
+.col-md-8, .col-md-12 {
 	padding-left: 0;
 	padding-right: 0;
 }

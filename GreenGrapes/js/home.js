@@ -78,14 +78,20 @@ var closeEnable = false;
 }
 
 $(document).ready(function () {
+
+    if(!document.getElementById("sidebar")) {
+    	return;
+    }
+
 	fssilde();
+
 	TagCanvas.Start('mycanvas', '', {
-		textColour : '#000',
+		textColour: '#000',
 		outlineColour: '#16a085',
-		outlineThickness : 1,
-		maxSpeed : 0.03,
-		depth : 0.75,
-		wheelZoom : false
+		outlineThickness: 1,
+		maxSpeed: 0.03,
+		depth: 0.75,
+		wheelZoom: false
 	});
 
 	//边栏固定
