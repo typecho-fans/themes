@@ -1,6 +1,9 @@
 <?php $this->need('header.php'); ?>
+<?php
+$hidden_sidebar =  !empty($this->options->ShowBlock) && in_array('SidebarHiddenInDetail', $this->options->ShowBlock);
+?>
 <div id="m-container" class="container">
-    <div class="col-md-8">
+    <div class="col-md-<?php echo $hidden_sidebar? '12' : '8' ?>">
         <div id="article-list">
             <article class="post-article clearfix">
                 <div>
@@ -44,9 +47,11 @@
         <?php $this->need('comments.php'); ?>
 
     </div>
+
+<?php if (!$hidden_sidebar): ?>
     <div class="col-md-4">
         <?php $this->need('sidebar.php'); ?>
     </div>
-
+<?php endif; ?>
 </div>
 <?php $this->need('footer.php');

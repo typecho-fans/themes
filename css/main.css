@@ -1,5 +1,5 @@
 @charset "utf-8";
-body{font-family: Hiragino Sans GB,微软雅黑,黑体,Arial,sans-serif;font-size: 14px;color:#666;line-height:1.5;background-color: #eeeded;}
+body{font-family: Hiragino Sans GB,微软雅黑,黑体,Arial,sans-serif;font-size: 14px;color:#666;line-height:1.5;background-color: #e9ecef;}
 hr{margin:20px auto;border: 1px dashed #E7E7E7;}
 img{border:0;vertical-align:middle;max-width: 100%;}
 p{display:block;}
@@ -342,7 +342,7 @@ img.avatar {
 .nav > li > a:hover,.nav > li > a:focus{text-decoration:none;background-color:#eeeeee}
 .m-nav{height:52px;background-color:#4a4a4a;position:relative;}
 .m-nav:after{clear:both}
-.m-nav .nav{position:relative;max-width: 1100px;float: left;display:block;margin: 0 auto;font-size:14px}
+.m-nav .nav{position:relative;max-width: 1170px;float: left;display:block;margin: 0 auto;font-size:14px}
 .m-nav .nav.pull-right{float:right;margin-right:0}
 .m-nav .nav > li{position:relative;float:left;margin-right:1px}
 .m-nav .nav li a{padding:15px 20px;color:#eeeeee}
@@ -360,7 +360,7 @@ img.avatar {
 .m-nav .nav li:hover a,.m-nav .nav li.current-menu-item a,.m-nav .nav li.current-menu-parent a,.m-nav .nav li.current_page_item a,.m-nav .nav li.current-post-ancestor a{background-color:#404040;}
 .m-nav .nav li ul{background-color:#404040;}
 
-.container{max-width:1100px;min-width:320px;margin:10px auto;position:relative;width: auto;}
+.container{min-width:320px;margin:10px auto;position:relative;width:auto;}
 
 #content{margin-right: 370px;}
 .post-article{background: #fff;margin-bottom: 10px;overflow: hidden;padding: 0 20px 20px;}
@@ -416,7 +416,7 @@ footer {padding: 20px;margin: 20px 0 0;text-align:center;background-color:#fffff
 .m-header-search{position:absolute;top:17px;right:17px;width:20px;height:20px;background-image:url(../img/content-header.png);background-position:-20px 0;background-size:40px;background-repeat:no-repeat;cursor:pointer;}
 .m-header h1{margin:0;text-align:center;font-weight:bold;font-size:14px;font-family:'Open Sans','Helvetica Neue',sans-serif;}
 .m-header h1 a{margin:0;padding:12px 25px;height:48px;color:#fff;font-size:14px;line-height:53px;}
-.m-nav-all{display:block;margin:0 auto;max-width:1100px;}
+.m-nav-all{display:block;margin:0 auto;max-width:1170px;}
 .m-logo-url{float:left;display:none;height:52px;}
 .m-logo-url img{width:50%;border-radius:100%;}
 .m-logo-url h3{margin:10px 0;color:#fff;font-weight:normal;}
