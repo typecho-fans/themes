@@ -18,7 +18,7 @@
         	<?php $this->content() ?>
         </div>
         <footer class="entry-meta">
-        	本条目发布于 <a href="<?php $this->permalink() ?>" title="<?php $this->date('G:i') ?>" rel="bookmark"><time class="entry-date" datetime="<?php $this->date('c'); ?>"><?php $this->date('Y 年 m 月 j 日'); ?></time></a>。属于<a href="#" title="查看 中的全部文章" rel="category"><?php $this->category(',') ?></a> 分类。<span class="by-author">作者是<span class="author vcard"><a class="url fn n" href="#" title="查看所有由 <?php $this->author(); ?> 发布的文章" rel="author"><?php $this->authro(); ?></a></span>。</span>
+        	本条目发布于 <a href="<?php $this->permalink() ?>" title="<?php $this->date('G:i') ?>" rel="bookmark"><time class="entry-date" datetime="<?php $this->date('c'); ?>"><?php $this->date('Y 年 m 月 j 日'); ?></time></a>。属于<a href="#" title="查看 中的全部文章" rel="category"><?php $this->category(',') ?></a> 分类。<span class="by-author">作者是<span class="author vcard"><a class="url fn n" href="#" title="查看所有由 <?php $this->author(); ?> 发布的文章" rel="author"><?php $this->author(); ?></a></span>。</span>
          </footer>
     </article>
 	<nav class="nav-single">
