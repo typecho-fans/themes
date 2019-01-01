@@ -1,0 +1,58 @@
+blockquote {
+    border-left:4px solid #FF5555;
+}
+
+.skin-bg {
+    background-color: #FF3333;
+}
+
+.m-header {
+    background-color: #FF5555;
+}
+
+.category-cloud a {
+    background-color: #FF5555;
+}
+
+.post-article .title a:hover{
+    color: #FF5555;
+}
+
+.article-copyright a, .article-content a,
+.article-copyright a:hover, .article-content a:hover {
+    color: #FF5555;
+}
+
+.btn-skin {
+    border: 1px solid #FF5555 !important;
+    color: #FF5555;
+}
+.btn-skin:hover {
+    color: #fff !important;
+    background-color:#FF5555;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #FF5555;
+    color: #fff;
+}
+
+.widget-sets .nav-pills {
+    border-bottom: 2px solid #FF5555;
+}
+
+.card.card-skin .card-header {
+    background-color: #FF5555;
+}
+
+.badge-skin {
+    background-color: #FF5555;
+}
+
+#back-to-top:hover{
+    border: #FF5555 1px solid;
+}
+
+#back-to-top.red:hover #point-up path{
+    fill:#FF5555;
+}

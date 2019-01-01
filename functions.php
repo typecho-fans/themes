@@ -32,6 +32,40 @@ function theme_random_posts(){
     }
     echo $defaults['after'];
 }
+
+function get_theme_color_array() {
+    $arr = array(
+        'red' => _t('赤'),
+        'orange' => _t('橙'),
+        'yellow' => _t('黄'),
+        'green' => _t('绿'),
+        'cyan' => _t('青'),
+        'blue' => _t('蓝'),
+        'purple' => _t('紫'),
+        'gray' => _t('灰')
+    );
+    return $arr;
+}
+
+/*
+ * 返回主题颜色配置
+ * return string
+ */
+function get_theme_color() {
+    $key = 'greengrapes_color';
+    $options = Typecho_Widget::widget('Widget_Options');
+
+    if ($options->allow_user_change_color && isset($_COOKIE[$key])
+        && array_key_exists($_COOKIE[$key], get_theme_color_array())) {
+        return $_COOKIE[$key];
+    }
+    $color = $options->themeColor;
+    return $color;
+}
+
+
+
+
 function themeConfig($form) {
     $options = Typecho_Widget::widget('Widget_Options');
     $bgImg = new Typecho_Widget_Helper_Form_Element_Text('bgImg', null, $options->themeUrl('img/bg.jpg', 'GreenGrapes'), _t('首页背景图片地址'), _t('在这里填入一个图片URL地址, 作为首页背景图片, 默认使用img下的header.png'));
@@ -42,6 +76,13 @@ function themeConfig($form) {
 
     $siteIcon = new Typecho_Widget_Helper_Form_Element_Text('sideName', null, null, _t('侧栏用户名'), _t('在这里填入一个左侧显示的用户名, 默认不显示'));
     $form->addInput($siteIcon);
+
+    $themeColor = new Typecho_Widget_Helper_Form_Element_Select('themeColor', get_theme_color_array(), 'green', _t('主题颜色'), _t('包括标签的颜色和每篇文章中的颜色'));
+    $form->addInput($themeColor);
+
+    $allow_user_change_color = new Typecho_Widget_Helper_Form_Element_Radio('allow_user_change_color',
+        array(0=>_t('拒绝'),1=>_t('允许'),), '1', _t('是否允许用户切换主题色'),_t('浏览者可在右侧切换主题颜色'));
+    $form->addInput($allow_user_change_color);
 
     $showBlock = new Typecho_Widget_Helper_Form_Element_Checkbox('ShowBlock', array(
         'ShowPostBottomBar' => _t('文章页显示上一篇和下一篇'),

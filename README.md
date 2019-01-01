@@ -3,6 +3,8 @@ typecho 绿色主题
 
 ![image](https://github.com/hongweipeng/GreenGrapes/raw/master/screenshot.png)
 
+预览：[https://www.hongweipeng.com](https://www.hongweipeng.com)
+
 ## 特点
 * 头像设计，突出中间的图片，使你脱颖而出。
 * header背景颗粒感突出。
@@ -17,5 +19,12 @@ typecho 绿色主题
 4. 在相应的主题点击“启用”即可使用
 
 ## Todo
-- [ ] 侧边栏项目可选是否显示
-- [ ] 主题配色扩充
+- [x] 侧边栏项目可选是否显示
+- [x] 主题配色扩充
+
+## 适配插件
+主题会判断插件是否存在，并合理的进行展示。插件不存在也不影响主题的使用。
+
+- [Links](http://www.imhan.com/archives/typecho_links_20141214/) ：友情链接；
+- [TeStat](https://github.com/hongweipeng/TeStat)：浏览数、点赞统计插件；
+

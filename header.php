@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/bootstrap.min.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/font-awesome.min.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/main.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/skin-'. get_theme_color() .'.css'); ?>">
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php if(class_exists('Snow_Plugin') && isset($this->options->plugins['activated']['Snow'])): ?>
     <style>
@@ -32,9 +33,9 @@
 </head>
 <body>
 <?php if(!($this->is('post') || $this->is('page')) || empty($this->options->ShowBlock) || !in_array('HeaderHiddenInDetail', $this->options->ShowBlock)): ?>
-<header id="l-header" class="l-header" style="background-image:url(<?php $this->options->bgImg(); ?>">
+<header id="l-header" class="l-header" style="background-image:url(<?php $this->options->bgImg(); ?>)">
     <div class="hdbg"></div>
-    <div class="hdbg2"></div>
+    <div class="hdbg2 skin-bg"></div>
     <div class="m-about">
         <div id="logo">
             <a href="<?php $this->options->siteUrl(); ?>"><img src="<?php $this->options->headerIcon(); ?>" alt=""></a>
