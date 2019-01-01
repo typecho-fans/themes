@@ -1,0 +1,58 @@
+blockquote {
+    border-left:4px solid #BEBEBE;
+}
+
+.skin-bg {
+    background-color: #778899;
+}
+
+.m-header {
+    background-color: #BEBEBE;
+}
+
+.category-cloud a {
+    background-color: #BEBEBE;
+}
+
+.post-article .title a:hover{
+    color: #BEBEBE;
+}
+
+.article-copyright a, .article-content a,
+.article-copyright a:hover, .article-content a:hover {
+    color: #BEBEBE;
+}
+
+.btn-skin {
+    border: 1px solid #BEBEBE !important;
+    color: #BEBEBE;
+}
+.btn-skin:hover {
+    color: #fff !important;
+    background-color:#BEBEBE;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #BEBEBE;
+    color: #fff;
+}
+
+.widget-sets .nav-pills {
+    border-bottom: 2px solid #BEBEBE;
+}
+
+.card.card-skin .card-header {
+    background-color: #BEBEBE;
+}
+
+.badge-skin {
+    background-color: #BEBEBE;
+}
+
+#back-to-top:hover{
+    border: #BEBEBE 1px solid;
+}
+
+#back-to-top.red:hover #point-up path{
+    fill:#BEBEBE;
+}
