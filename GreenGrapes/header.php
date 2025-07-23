@@ -1,4 +1,4 @@
-<!doctype html>
+<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit(0); ?><!doctype html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -32,10 +32,10 @@
     <?php $this->header(); ?>
 </head>
 <body>
-<?php if(!($this->is('post') || $this->is('page')) || empty($this->options->ShowBlock) || !in_array('HeaderHiddenInDetail', $this->options->ShowBlock)): ?>
-<header id="l-header" class="l-header" style="background-image:url(<?php $this->options->bgImg(); ?>)">
-    <div class="hdbg"></div>
-    <div class="hdbg2 skin-bg"></div>
+<?php if (empty($this->options->ShowBlock) || !in_array('HiddenHeaderGlobal', $this->options->ShowBlock)): ?>
+<?php if(!($this->is('post') || $this->is('page')) || empty($this->options->ShowBlock) || !in_array('HiddenHeaderInDetail', $this->options->ShowBlock)): ?>
+<header id="l-header" class="l-header" style="background-image:url(<?php $this->options->bgImg(); ?>);-moz-background-size:100% 100%; background-size:100% 100%;">
+    <div class="hdbg skin-bg"></div>
     <div class="m-about">
         <div id="logo">
             <a href="<?php $this->options->siteUrl(); ?>"><img src="<?php $this->options->headerIcon(); ?>" alt=""></a>
@@ -46,30 +46,39 @@
     <div id="header-canvas" style="width: 100%;height: 100%"></div>
 </header>
 <?php endif; ?>
+<?php endif; ?>
 <div id="m-nav" class="m-nav">
-    <div class="m-nav-all">
+    <div class="container m-nav-all">
         <div class="m-logo-url">
-            <img src="<?php $this->options->headerIcon(); ?>">
+            <img src="<?php $this->options->headerIcon(); ?>" alt="头像">
             <h3><?php $this->options->sideName(); ?></h3>
         </div>
-        <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
-        <ul class="nav">
-            <li <?php if($this->is('index')): ?> class="active"<?php endif; ?>>
-                <a href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
-            </li>
-            <?php while($pages->next()): ?>
-                <li <?php if($this->is('page', $pages->slug)): ?> class="active"<?php endif; ?>>
-                    <a href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
+        <?php $pages = $this->widget('\Widget\Contents\Page\Rows')->on(true); ?>
+        <div class="d-flex justify-content-between align-items-center">
+            <ul class="nav">
+                <li <?php if($this->is('index')): ?> class="active"<?php endif; ?>>
+                    <a href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
                 </li>
-            <?php endwhile; ?>
-        </ul>
+                <?php while($pages->next()): ?>
+                    <li <?php if($this->is('page', $pages->slug)): ?> class="active"<?php endif; ?>>
+                        <a href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
+                    </li>
+                <?php endwhile; ?>
+            </ul>
+            <!-- 使用 .d-none .d-xl-block，在小于 lg 尺寸(1100px)的屏幕上隐藏 -->
+            <form class="d-flex d-none d-xl-flex" method="post" action="<?php $this->options->siteUrl(); ?>" role="search">
+                <label for="s" class="me-2">
+                    <input class="form-control" name="s" placeholder="搜索关键词..." type="text" />
+                </label>
+                <button class="btn btn-secondary"><i class="fa fa-search"></i> 查找</button>
+            </form>
+        </div>
     </div>
 </div>
-<form role="search" method="get" id="search-form" action="./">
+<form id="search-form" method="post" action="<?php $this->options->siteUrl(); ?>" role="search">
     <div class="search-form">
         <span id="search-form-close">×</span>
-        <input placeholder="Search for" name="s" id="search-input-s" type="text">
-        <input class="webFont" id="searchsubmit" value="L" type="submit">
+        <label for="search-input-s"></label><input placeholder="Search for" name="s" id="search-input-s" type="text">
     </div>
 </form>
 <div id="m-header" class="m-header">
