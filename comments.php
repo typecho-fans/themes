@@ -1,4 +1,7 @@
-<?php $this->comments()->to($comments); ?>
+<?php
+if (!defined('__TYPECHO_ROOT_DIR__')) exit(0);
+$comments = $this->comments()->on(true);
+?>
 
 
 <?php if(!$this->allow('comment')): ?>
@@ -24,19 +27,25 @@
             <?php else: ?>
                 <div class="two fields">
                     <div class="comments-field">
-                        <input type="text" name="author" placeholder="<?php _e('称呼'); ?><?php _e(' (必填)') ?>" value="<?php $this->remember('author'); ?>" />
+                        <label class="w-100">
+                            <input type="text" name="author" placeholder="<?php _e('称呼'); ?><?php _e(' (必填)') ?>" value="<?php $this->remember('author'); ?>" />
+                        </label>
                     </div>
                     <div class="comments-field">
-                        <input type="email" name="mail" placeholder="<?php _e('电子邮件'); ?><?php if ($this->options->commentsRequireMail): ?><?php _e(' (必填)') ?><?php endif; ?>" value="<?php $this->remember('mail'); ?>" />
+                        <label class="w-100">
+                            <input type="email" name="mail" placeholder="<?php _e('电子邮件'); ?><?php if ($this->options->commentsRequireMail): ?><?php _e(' (必填)') ?><?php endif; ?>" value="<?php $this->remember('mail'); ?>" />
+                        </label>
                     </div>
                 </div>
                 <div class="comments-field">
-                    <input type="url" name="url" placeholder="<?php _e('个人主页'); ?><?php if ($this->options->commentsRequireURL): ?><?php _e(' (必填)') ?><?php endif; ?>" value="<?php $this->remember('url'); ?>" />
+                    <label class="w-100">
+                        <input type="url" name="url" placeholder="<?php _e('个人主页'); ?><?php if ($this->options->commentsRequireURL): ?><?php _e(' (必填)') ?><?php endif; ?>" value="<?php $this->remember('url'); ?>" />
+                    </label>
                 </div>
             <?php endif; ?>
 
             <div class="comments-field">
-                <textarea rows="8" cols="50" id="comment-content" placeholder="<?php _e('回复内容'); ?><?php _e(' (必填)')?>" name="text"><?php $this->remember('text'); ?></textarea>
+                <label for="comment-content"></label><textarea rows="8" cols="50" id="comment-content" placeholder="<?php _e('回复内容'); ?><?php _e(' (必填)')?>" name="text"><?php $this->remember('text'); ?></textarea>
             </div>
             <button type="submit" id="comment-submit" class="btn btn-skin"><?php _e('提交评论'); ?></button>
         </form>
