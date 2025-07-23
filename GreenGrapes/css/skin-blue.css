@@ -1,5 +1,6 @@
 blockquote {
-    border-left:4px solid #00BFFF;
+    border-left:7px solid #00BFFF;
+    border-right:7px solid #00BFFF;
 }
 
 .skin-bg {

@@ -1,6 +1,4 @@
-
-particlesJS('header-canvas',
-    {
+var particlesOptions = {
         "particles": {
             "number": {
                 "value": 110,
@@ -115,6 +113,8 @@ particlesJS('header-canvas',
             "background_repeat": "no-repeat",
             "background_size": "cover"
         }
-    }
+    };
 
-);
+if (document.getElementById('header-canvas')) {
+    particlesJS('header-canvas', particlesOptions);
+}

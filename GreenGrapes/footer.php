@@ -1,3 +1,4 @@
+<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit(0); ?>
 <?php if ($this->options->allow_user_change_color) : ?>
 <div id="switch_color">
     <div class="colorful"></div>
@@ -26,13 +27,14 @@
     </div>
 </footer>
 <script src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
-<script src="<?php $this->options->themeUrl('js/popper.min.js'); ?>"></script>
-<script src="<?php $this->options->themeUrl('js/bootstrap.min.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('js/bootstrap.bundle.min.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('js/jquery.cookie.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('js/functionall.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('js/tagcanvas.min.js'); ?>"></script>
+<?php if (empty($this->options->ShowBlock) || !in_array('HiddenParticle', $this->options->ShowBlock)): ?>
 <script src="<?php $this->options->themeUrl('js/particles.min.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('js/headerCanvas.js'); ?>"></script>
+<?php endif; ?>
 <script src="<?php $this->options->themeUrl('js/home.js'); ?>"></script>
 <?php $this->footer(); ?>
 </body>

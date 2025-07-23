@@ -3,8 +3,6 @@ typecho 绿色主题
 
 ![image](https://github.com/hongweipeng/GreenGrapes/raw/master/screenshot.png)
 
-预览：[https://www.hongweipeng.com](https://www.hongweipeng.com)
-
 ## 特点
 * 头像设计，突出中间的图片，使你脱颖而出。
 * header背景颗粒感突出。
