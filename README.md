@@ -38,6 +38,7 @@
 [GreenGrapes](GreenGrapes) | 响应式绿色科技感双栏主题 | 1.0.2 | [hongweipeng](https://github.com/hongweipeng) | [Download]()
 [Nova](Nova) | 仿Farbox响应式极简单栏主题 | 1.0.1 | [jiya](https://github.com/shuxiao9058) | [Special]()
 [Slanted](Slanted) | (WordPress移植)响应式多配色个性主题 | 1.1.0 | [DT27](https://github.com/DT27) | [Special]()
+[Tiphia](https://github.com/cairbin/tiphia-for-typecho) | (TiphiaPress移植)一款简洁清爽的响应式单栏主题 | 1.1.0 | [CairBin](https://github.com/cairbin) | [Download]()
 [Yakumo](Yakumo) | (Ghost移植)响应式大Banner单栏主题 | 1.0.0 | [八云酱](https://github.com/bayunjiang) | [Special]()
 [JieXiang](jiexiang) | “结香”多配色简洁双栏主题 | 1.0.1 | [ShingChi](https://github.com/shingchi) | [Download]()
 [PosArt](posart) | 响应式蓝灰色无图单栏主题 | 1.0 | [Kunr (Lingoys Art)](https://github.com/Rakume) | [Download]()
